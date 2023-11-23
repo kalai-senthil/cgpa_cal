@@ -8,7 +8,11 @@ enum SubType {
   @HiveField(1)
   LAB,
   @HiveField(2)
-  NONE
+  NONE,
+  @HiveField(3)
+  PP2,
+  @HiveField(4)
+  PP1,
 }
 
 Map<String, int> grades = {

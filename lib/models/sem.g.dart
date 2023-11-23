@@ -82,3 +82,57 @@ class SubjectAdapter extends TypeAdapter<Subject> {
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
+
+class SubTypeAdapter extends TypeAdapter<SubType> {
+  @override
+  final int typeId = 2;
+
+  @override
+  SubType read(BinaryReader reader) {
+    switch (reader.readByte()) {
+      case 0:
+        return SubType.SUB;
+      case 1:
+        return SubType.LAB;
+      case 2:
+        return SubType.NONE;
+      case 3:
+        return SubType.PP2;
+      case 4:
+        return SubType.PP1;
+      default:
+        return SubType.SUB;
+    }
+  }
+
+  @override
+  void write(BinaryWriter writer, SubType obj) {
+    switch (obj) {
+      case SubType.SUB:
+        writer.writeByte(0);
+        break;
+      case SubType.LAB:
+        writer.writeByte(1);
+        break;
+      case SubType.NONE:
+        writer.writeByte(2);
+        break;
+      case SubType.PP2:
+        writer.writeByte(3);
+        break;
+      case SubType.PP1:
+        writer.writeByte(4);
+        break;
+    }
+  }
+
+  @override
+  int get hashCode => typeId.hashCode;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is SubTypeAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
+}

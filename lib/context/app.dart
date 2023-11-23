@@ -10,374 +10,375 @@ class AppContext extends ChangeNotifier {
       "Sem 1",
       [
         Subject(
-          name: "name",
+          name: "Engineering Math",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.SUB,
         ),
         Subject(
-          name: "name",
+          name: "IEDPA",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.SUB,
         ),
         Subject(
-          name: "name",
+          name: "MEDSD",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.SUB,
         ),
         Subject(
-          name: "name",
+          name: "PSA",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.SUB,
         ),
         Subject(
-          name: "name",
+          name: "PPY",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.SUB,
         ),
         Subject(
-          name: "name",
+          name: "MEDSD Lab",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.LAB,
         ),
         Subject(
-          name: "name",
+          name: "PPY Lab",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.LAB,
         ),
         Subject(
-          name: "name",
+          name: "EG lab",
           grade: '-',
-          credits: SubType.NONE,
+          credits: SubType.LAB,
         ),
       ],
     ),
     Semester("Sem 2", [
       Subject(
-        name: "name",
+        name:
+            "Engineering Mathematics – II (Multiple Integrals and Transforms)",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in C ",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Microprocessors and Microcontrollers",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Front-End Web Development",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Computer Organization and Architecture",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Computer Graphics",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in C Laboratory ",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Microprocessors and Microcontrollers Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Front-End Web Development Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
     ]),
     Semester("Sem 3", [
       Subject(
-        name: "name",
+        name: "Numerical Methods",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Data Structures",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in C++",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Automata and Compiler Design",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Operating Systems",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Data Communications and Computer Networks",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "General Proficiency - I",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Numerical Methods Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Data Structures Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in C++ Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Linux Internals Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
     ]),
     Semester("Sem 4", [
       Subject(
-        name: "name",
+        name: "Discrete Mathematics and Graph Theory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in Java",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Database Management Systems",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Design and Analysis of Algorithms",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Professional Elective - I",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Open Elective - I",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "General Proficiency - II",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in Java Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Database Management Systems Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Design and Analysis of Algorithms Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
     ]),
     Semester("Sem 5", [
       Subject(
-        name: "name",
+        name: "Probability and Statistics",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Handheld Computing: Design and Application Development",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in PHP",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Software Engineering and Testing",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Professional Elective - II",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Open Elective – II",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Handheld Computing Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Programming in PHP Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Software Testing Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
     ]),
     Semester("Sem 6", [
       Subject(
-        name: "name",
+        name: "Artificial Intelligence and Expert Systems",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "C# and .Net Programming",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Cloud Computing and Big Data",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Animation and Visual Effects",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Professional Elective - III",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Open Elective - III",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Artificial Intelligence and Expert Systems Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "C# and .Net Programming Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Animation and Visual Effects Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
     ]),
     Semester("Sem 7", [
       Subject(
-        name: "name",
+        name: "IoT and Edge Computing",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Data Science and Digital Marketing Analytics",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Professional Elective – IV",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Open Elective – IV",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Business Basics for Entrepreneur",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "IoT and Edge Computing Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Data Science and Digital Marketing Analytics Laboratory",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Comprehensive Viva-Voce",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Project phase – I",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.PP1,
       ),
       Subject(
-        name: "name",
+        name: "Internship / Inplant Training",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.PP1,
       ),
     ]),
     Semester("Sem 8", [
       Subject(
-        name: "name",
+        name: "Block chain and Cryptography",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Professional Elective – V",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Professional Elective – VI ",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.SUB,
       ),
       Subject(
-        name: "name",
+        name: "Entrepreneurship Management",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.LAB,
       ),
       Subject(
-        name: "name",
+        name: "Project phase – II",
         grade: '-',
-        credits: SubType.NONE,
+        credits: SubType.PP2,
       ),
     ])
   ];
@@ -403,17 +404,21 @@ class AppContext extends ChangeNotifier {
     await appBox.put("semesters", semesters);
   }
 
-  Future<List<Semester>> _getSemesters() async {
+  void _getSemesters() async {
     if (semesterLoaded) {
-      return semesters;
+      return;
     }
-    var data = await appBox.get("semesters", defaultValue: []);
+    var data = await appBox.get("semesters", defaultValue: []) as List;
+    if (data.isEmpty) {
+      await appBox.put("semesters", semesters);
+      return;
+    }
     List<Semester> sems = [];
-    for (var e in (data as List)) {
+    for (var e in data) {
       sems.add(e as Semester);
     }
-    semesters.addAll(sems);
+    semesters = sems;
+    semesterLoaded = false;
     notifyListeners();
-    return semesters;
   }
 }
