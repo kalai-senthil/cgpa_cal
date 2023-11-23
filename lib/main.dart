@@ -350,5 +350,8 @@ String calcCGPA(List<Semester> sems) {
       }
     }
   }
+  if (totalCredits == 0) {
+    return "0.00";
+  }
   return (totalNum / totalCredits).toStringAsFixed(2);
 }
