@@ -386,6 +386,14 @@ class AppContext extends ChangeNotifier {
   AppContext() {
     init();
   }
+  void clearSem(int semIdx) {
+    for (var element in semesters[semIdx].subjects) {
+      element.grade = '-';
+    }
+    notifyListeners();
+    syncSemesters();
+  }
+
   void setGrade(int semIdx, int subIdx, String grade) {
     semesters[semIdx].subjects[subIdx].grade = grade;
     notifyListeners();

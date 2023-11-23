@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'CGPA Calc',
+        title: 'CGPA Calculator',
         theme: ThemeData(
           useMaterial3: true,
         ),
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "CGPA Calc",
+          "CGPA Calculator",
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.w600,
             fontSize: 20,
@@ -58,12 +58,14 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           const Flexible(
+            fit: FlexFit.tight,
             flex: 8,
             child: SemesterView(),
           ),
-          Material(
-            elevation: 10,
-            child: Flexible(
+          Flexible(
+            fit: FlexFit.tight,
+            child: Material(
+              elevation: 10,
               child: ListTile(
                 title: Text(
                   "CGPA",
@@ -213,11 +215,31 @@ class SemPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Text(
-              semester.name,
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    semester.name,
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                    ),
+                  ),
+                  TextButton.icon(
+                    onPressed: () {
+                      context.read<AppContext>().clearSem(semIdx);
+                    },
+                    icon: const Icon(Icons.clear_all_rounded),
+                    label: Text(
+                      "Clear",
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
             Flexible(
@@ -226,14 +248,23 @@ class SemPage extends StatelessWidget {
                 itemBuilder: (ctx, idx) {
                   final sub = semester.subjects[idx];
                   return ListTile(
-                    title: Text(sub.name),
+                    title: Text(
+                      sub.name,
+                      style: GoogleFonts.poppins(),
+                    ),
                     trailing: DropdownButton(
+                      icon: const Icon(Icons.arrow_drop_down_circle_rounded),
                       value: sub.grade,
                       items: grades.keys
-                          .map((e) => DropdownMenuItem(
-                                value: e,
-                                child: Text(e),
-                              ))
+                          .map(
+                            (e) => DropdownMenuItem(
+                              value: e,
+                              child: Text(
+                                e,
+                                style: GoogleFonts.poppins(),
+                              ),
+                            ),
+                          )
                           .toList(),
                       onChanged: (e) {
                         if (e != null) {
@@ -246,7 +277,12 @@ class SemPage extends StatelessWidget {
                 itemCount: semester.subjects.length,
               ),
             ),
-            Flexible(child: Text(calcSGPA(semester)))
+            Flexible(
+              child: Text(
+                calcSGPA(semester),
+                style: GoogleFonts.poppins(),
+              ),
+            )
           ],
         ),
       ),
@@ -308,12 +344,11 @@ String calcCGPA(List<Semester> sems) {
         default:
           continue;
       }
+      totalCredits += cred;
       if (grades[sub.grade] != null) {
         totalNum += cred * grades[sub.grade]!;
       }
-      totalCredits += cred;
     }
   }
-
   return (totalNum / totalCredits).toStringAsFixed(2);
 }
